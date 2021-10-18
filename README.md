@@ -26,29 +26,29 @@ Section 4 can be executed separately
   - Key output:
     - Acommon: non-repeated characters from the files in input folder 
 
-- Section 2: find appear times in all data
-  - This section needs processed prior section first
+- Section 2: find the number of occurrences of every characters in all data
+  - This section needs processed characters from section 1
   - Parameter setting：
     ```
     del = score(:,5)<0.9| (score(:,4)<4 & score(:,5)>=1) | isnan(score(:,5));
     ```
-    - exclude condition
-      - Occurrences proportion lower than 0.9 
-      - Less than 4 times
+    - exclusion criteria
+      - Occurrences proportion (obesity cases/all cases) lower than 0.9 
+      - Occurrences Less than 4 times
  
   - Key output
     - score:
-      - number of each character
-      - Occurances in unmentioned data (counted if the data include the character)
-      - Occurances in obesity data
-      - The difference in frequency between unmentioned and obesity group
-      - Percentage of appearances in obesity to all times
-    - WORDS: the capital characters fit the condition
-    - words: the lower characters fit the condition
+      - Number of each character
+      - Occurrences in unmentioned data (counted if the data include the character)
+      - Occurrences in obesity data
+      - The difference in the frequency between obesity group and unmentioned group
+      - Percentage of occurrences in obesity to occurrences in all data 
+    - WORDS: the characters in uppercase that fit the criteria
+    - words: the characters in lowercase that fit the criteria
 
-- Section 3: find the best F1-score in different combination
-    - Used to find out all combination of characters listed in above
-    - Note that too many words (i) in the combination may cause too much time
+- Section 3: find the best F1-score in different combinations
+    - Used to find out all combinations of characters listed above
+    - Note that too many words (i) in a combination may cost a lot of time
     ```
     p = length(allwords);
     i = 2; 

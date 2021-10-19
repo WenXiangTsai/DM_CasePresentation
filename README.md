@@ -32,7 +32,7 @@ Section 4 can be executed separately
     ```
     del = score(:,5)<0.9| (score(:,4)<4 & score(:,5)>=1) | isnan(score(:,5));
     ```
-    - exclusion criteria
+    - exclusion criteria in our experiment
       - Occurrences proportion (obesity cases/all cases) lower than 0.9 
       - Occurrences Less than 4 times
  

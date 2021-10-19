@@ -34,13 +34,13 @@ Section 4 can be executed separately
     ```
     - Exclusion criteria in our experiment
       - Occurrences proportion (obesity cases/all cases) lower than 0.9 
-      - Occurrences Less than 4 times
+      - Number of occurrences Less than 4 times
  
   - Key output
     - score:
       - Number of each character
-      - Occurrences in unmentioned data (counted if the cases include the character)
-      - Occurrences in obesity data
+      - Number of occurrences in unmentioned data (counted if the cases include the character)
+      - Number of occurrences in obesity data
       - The difference in the frequency between obesity group and unmentioned group
       - Percentage of occurrences in obesity to all cases 
     - WORDS: the characters in uppercase that fit the criteria
@@ -58,8 +58,7 @@ Section 4 can be executed separately
       - wordrecord_sort: list all combinations from high to low according to F1-score 
 
 - Section 4: obesity status detection
-    -  Used to verify data and output judgment results
-    -  Enter the keywords used to verify the data
+    -  Enter the keywords to detect matches in data and output our judgment results
     ```
     obesity_wordset = {'obesity','obese','CHRONIC','dentition','ADVAIR','cerebrovascular'};
     ```

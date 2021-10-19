@@ -32,17 +32,17 @@ Section 4 can be executed separately
     ```
     del = score(:,5)<0.9| (score(:,4)<4 & score(:,5)>=1) | isnan(score(:,5));
     ```
-    - exclusion criteria in our experiment
+    - Exclusion criteria in our experiment
       - Occurrences proportion (obesity cases/all cases) lower than 0.9 
       - Occurrences Less than 4 times
  
   - Key output
     - score:
       - Number of each character
-      - Occurrences in unmentioned data (counted if the data include the character)
+      - Occurrences in unmentioned data (counted if the cases include the character)
       - Occurrences in obesity data
       - The difference in the frequency between obesity group and unmentioned group
-      - Percentage of occurrences in obesity to occurrences in all data 
+      - Percentage of occurrences in obesity to all cases 
     - WORDS: the characters in uppercase that fit the criteria
     - words: the characters in lowercase that fit the criteria
 

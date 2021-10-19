@@ -48,7 +48,7 @@ Section 4 can be executed separately
 
 - Section 3: find the best F1-score in different combinations
     - Used to find out all combinations of characters listed above
-    - Note that too many words (i) in a combination may cost a lot of time
+    - Please note that too many words (i) in the combination may cause excessive execution time
     ```
     p = length(allwords);
     i = 2; 
